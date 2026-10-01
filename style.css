@@ -1,17 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --bg: #000000;
   --bg-secondary: #0d0d0d;
   --card: #151515;
+
   --text: #ffffff;
   --muted: #a1a1a1;
-  --primary: #ffffff;
-  --accent: #d4af37;
+
+  --primary: #ff0000;
+  --accent: #ff0000;
+
   --border: #292929;
 }
 
@@ -32,8 +29,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+
   background: rgba(0, 0, 0, 0.95);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid #292929;
 }
 
 .navbar {
@@ -47,7 +45,7 @@ header {
 }
 
 .logo {
-  color: var(--accent);
+  color: #ff0000;
   font-size: 28px;
   font-weight: bold;
 }
@@ -59,20 +57,19 @@ header {
 }
 
 .nav-links a {
-  color: var(--text);
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
   transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: #ff0000;
 }
 
 #themeBtn {
-  background: #1a1a1a;
+  background: #151515;
   color: white;
-  border: 1px solid var(--border);
+  border: 1px solid #333;
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
@@ -93,10 +90,10 @@ header {
   background:
     radial-gradient(
       circle at top right,
-      #292929,
+      #3b0000,
       transparent 35%
     ),
-    #000;
+    #000000;
 }
 
 .hero-content {
@@ -104,7 +101,7 @@ header {
 }
 
 .tagline {
-  color: var(--accent);
+  color: #ff0000;
   font-weight: bold;
   letter-spacing: 4px;
   margin-bottom: 15px;
@@ -117,11 +114,11 @@ header {
 }
 
 .hero h2 span {
-  color: var(--accent);
+  color: #ff0000;
 }
 
 .hero p:not(.tagline) {
-  color: var(--muted);
+  color: #a1a1a1;
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto 30px;
@@ -130,8 +127,8 @@ header {
 /* Buttons */
 
 .primary-btn {
-  background: var(--accent);
-  color: #000;
+  background: #ff0000;
+  color: #ffffff;
 
   border: none;
   padding: 14px 30px;
@@ -145,11 +142,11 @@ header {
 }
 
 .primary-btn:hover {
-  background: #ffffff;
+  background: #cc0000;
   transform: translateY(-3px);
 
   box-shadow:
-    0 10px 30px rgba(212, 175, 55, 0.25);
+    0 10px 30px rgba(255, 0, 0, 0.3);
 }
 
 /* Sections */
@@ -173,7 +170,7 @@ header {
 .about p {
   max-width: 650px;
   margin: 20px auto;
-  color: var(--muted);
+  color: #a1a1a1;
 }
 
 /* Cards */
@@ -187,11 +184,11 @@ header {
 }
 
 .card {
-  background: var(--card);
+  background: #151515;
   padding: 35px 25px;
 
   border-radius: 12px;
-  border: 1px solid var(--border);
+  border: 1px solid #292929;
 
   transition: 0.3s;
 }
@@ -199,10 +196,10 @@ header {
 .card:hover {
   transform: translateY(-8px);
 
-  border-color: var(--accent);
+  border-color: #ff0000;
 
   box-shadow:
-    0 15px 40px rgba(212, 175, 55, 0.12);
+    0 15px 40px rgba(255, 0, 0, 0.15);
 }
 
 .icon {
@@ -211,25 +208,26 @@ header {
 }
 
 .card h3 {
-  color: var(--accent);
+  color: #ff0000;
   margin-bottom: 10px;
 }
 
 .card p {
-  color: var(--muted);
+  color: #a1a1a1;
 }
 
 /* Contact */
 
 .contact {
   max-width: 100%;
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: #0d0d0d;
+
+  border-top: 1px solid #292929;
+  border-bottom: 1px solid #292929;
 }
 
 .contact p {
-  color: var(--muted);
+  color: #a1a1a1;
   margin-bottom: 25px;
 }
 
@@ -239,10 +237,10 @@ footer {
   text-align: center;
   padding: 25px;
 
-  background: #000;
-  color: #777;
+  background: #000000;
+  color: #777777;
 
-  border-top: 1px solid var(--border);
+  border-top: 1px solid #292929;
 }
 
 /* Mobile */
